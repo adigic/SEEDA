@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from '@/components/Header'
+import Header from '@/components/Header';
+
 import { Chakra_Petch } from 'next/font/google';
 
 const geistSans = localFont({

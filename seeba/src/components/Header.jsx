@@ -7,7 +7,7 @@ export default function Header() {
   return (
 
     // Wrapper for the header/navbar
-    <div className='flex justify-between items-center p-3 max-w-7xl mx-auto bg-black p-5'>
+    <div className='flex justify-between items-center p-3  mx-auto bg-black p-5 max-w-7xl'>
         
         {/* Links - left side of the header/navbar */}
         <div className='flex gap-5'>
