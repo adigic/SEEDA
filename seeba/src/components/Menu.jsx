@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from 'next/link'; // Import Link component from Next.js for client-side navigation
 
 
 export default function Menu({ title, address, Icon}) {

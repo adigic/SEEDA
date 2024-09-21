@@ -19,6 +19,8 @@ export const metadata = {
   description: "This is a movie discovery web app",
 };
 
+// Found this font on google fonts
+
 const chakraPetch = Chakra_Petch({
   subsets: ['latin'],
   weight: ['400', '700'],
