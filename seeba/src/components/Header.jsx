@@ -7,7 +7,7 @@ export default function Header() {
   return (
 
     // Wrapper for the header/navbar
-    <div className='flex justify-between items-center p-3  mx-auto bg-black p-5 max-w-7xl'>
+    <div className='flex justify-between items-center mx-auto bg-black p-5 max-w-7xl xl:rounded-b-lg'>
         
         {/* Links - left side of the header/navbar */}
         <div className='flex gap-5'>
@@ -17,10 +17,9 @@ export default function Header() {
         </div>
 
         {/* Logo - right side of the header/navbar */}
-        <Link href={'/'} className='flex gap-1 items-center'>
-          <span className='text-2xl font-bold text-gray-900 bg-green-400 py-1 px-2 m-1'>SEEBA</span>
-          <span className='text-xl hidden sm:inline text-white'>MOVIES</span>
-
+        <Link href={'/'} className='flex gap-1 items-center justify-center sm:justify-center'>
+          <span className='text-2xl font-bold text-black bg-green-400 py-1 px-2 m-1'>SEEBA</span>
+          <span className='text-xl text-white'>MOVIES</span>
         </Link>
     </div>
   )

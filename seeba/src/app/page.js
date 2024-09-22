@@ -19,6 +19,7 @@ export default async function Home() {
   return (
     <div>
       <Results results={results} />
+      
     </div>
   );
 }
