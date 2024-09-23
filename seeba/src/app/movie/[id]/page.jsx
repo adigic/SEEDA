@@ -3,6 +3,8 @@ import Image from 'next/image'
 import {FaStar} from 'react-icons/fa';
 
 export default async function DetailedView({ params }) {
+
+    // Fetch dynamic movie id from URL
     const movieId = params.id;
 
     // Fetch movie details
@@ -15,6 +17,9 @@ export default async function DetailedView({ params }) {
 
     // Combine movie and cast data
     const combinedMovie = { ...movie, cast: credits.cast };
+
+
+    // I seperated the fetches because the movie details and cast are retrieved from different API endpoints, and then combine them into one object for easier access and rendering.
 
   return (
     <div className='w-full'>

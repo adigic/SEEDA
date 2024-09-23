@@ -1,21 +1,25 @@
-import Results from '@/components/Results'; // Ensure this is the correct path
+import Results from '@/components/Results';
 
-const API_KEY = process.env.API_KEY; // Retrieves the API key from environment variables for secure access to the API
 
 export default async function Home() {
+
+  // Fetch popular movies from TMDb
   const res = await fetch(
-    `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`
+    `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}&language=en-US&page=1`
   );
 
-  const data = await res.json();
+  // Convert the response to JSON
+  const data = await res.json(); 
   
-  if (!res.ok) { // Handle error if the fetch fails
+  // Handle error if the fetch fails
+  if (!res.ok) {
     throw new Error('Failed fetching data');
   }
 
+  // Extract results from the data
   const results = data.results;
 
-  // Returning the component JSX properly
+  // Show the Results component with the fetched movie data
   return (
     <div>
       <Results results={results} />
