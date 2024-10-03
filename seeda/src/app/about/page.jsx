@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='mx-auto max-w-7xl p-3 space-y-4 text-lg'>
+    <div className='mx-auto max-w-7xl p-3 space-y-4 text-lg fade'>
         <h1 className='text-2xl font-bold text-black bg-green-400 py-1 px-2 mt-5 w-max'>ABOUT</h1>
 
         <p>Welcome to SEEDA, a movie discovery web app designed to help you explore and find popular films. From the latest Hollywood blockbusters to indie gems, SEEDA offers an easy and intuitive way to discover detailed information about movies, including genres, cast, release dates, and ratings.</p>

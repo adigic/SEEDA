@@ -22,7 +22,7 @@ export default async function DetailedView({ params }) {
     // I seperated the fetches because the movie details and cast are retrieved from different API endpoints, and then combine them into one object for easier access and rendering.
 
   return (
-    <div className='w-full'>
+    <div className='w-full fade'>
         <div className='p-4 md:pt-8 flex flex-col md:flex-row content-center max-w-7xl mx-auto md:space-x-7'>
 
         {/* Show movie poster */}
