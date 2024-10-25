@@ -19,6 +19,7 @@ export default function Card({ result}) {
         }`}
         width={500}
             height={300}
+            alt={'Poster missing'}
             className='group-hover:opacity-90 duration-100 transform group-hover:scale-105 transition-transform  '>            
             </Image>
         </div>

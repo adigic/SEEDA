@@ -26,7 +26,7 @@ export default async function DetailedView({ params }) {
         <div className='p-4 md:pt-8 flex flex-col md:flex-row content-center max-w-7xl mx-auto md:space-x-7'>
 
         {/* Show movie poster */}
-            <Image src={`https://image.tmdb.org/t/p/original/${
+            <Image alt={'Poster missing'} src={`https://image.tmdb.org/t/p/original/${
                 combinedMovie.backdrop_path || combinedMovie.poster_path
             }`}
             width={500}
